@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #a8a8a891;
+    background-color: rgb(39, 39, 39);
     color: rgb(24, 24, 24);
     text-align: center;
 }
@@ -72,10 +72,23 @@ video {
 .navbar {
     display: block;
     bottom: 0;
+    position: relative;
 }
 
 li {
     display: inline-block;
     margin-right: 5px;
+}
+
+ul {
+    
+}
+
+.bottomnav {
     bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(184, 80, 80);
+    text-align: center;
+    
 }
