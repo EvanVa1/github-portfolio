@@ -1,75 +1,139 @@
- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evan Val Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-<body>
-    <!-- 
-    <header>
-        <h1>Evan Val Portfolio</h1>
-    </header>
-    -->
+    </head>
 
-    <!--
-    <nav class="navbar">
-        <ul>
-            <li><a href="projects.html">Projects</a><li>
-            <li><a href="">Contact</a><li>
-        </ul>
-    </nav>
-    -->
+    <body>
+        <div class="wrapper">
 
+            <div class="row">
+                
+                <div class="column1">
 
+                    <video loop="true" autoplay="autoplay" controles muted>
+                        <source src ="Testvid.mkv">
+                    </video>
 
+                    <p>Store page: <a href="https://play.google.com/store/apps/details?id=com.BDriftGames.BalloonDrifter">Google Play</a></p>
+                   
+                </div>
 
-    <div class="container">
+                <div class="column2">
+                    <h2>Balloon Drifter</h2>
 
-        <section class="one">
-            <h1>First Page</h1>
-        </section>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio minus voluptate quam tenetur dolore debitis cum mollitia nesciunt vel aspernatur corporis quibusdam repudiandae laboriosam, consectetur rem asperiores fugiat. Possimus, incidunt!</p>
+                    <p>key achievments</p>
 
-        <section class="two">
-            <h1>Second Page</h1>
-        </section>
-
-        <section class="three">
-            <h1>Third Page</h1>
-        </section>
-
-        <section class="four">
-            <h1>Fourth Page</h1>
-        </section>
-
-        <section>
-            <h2>Game Projects</h2>
-            <div class="game">
-                <div>
-                    <img src="unnamed.png" alt="Game 1">
-                    <video width="440px" loop="true" autoplay="autoplay" controles muted>
-                    <source src ="Testvid.mkv"></video>
-                    <h3>Balloon Drifter</h3>
-                    <p>Travel arcoss an endless ocean</p>
+                    <ul>
+                        <li> laksdjfl </li>
+                        <li> laksdjfl </li>
+                        <li> laksdjfl </li>
+                    </ul> 
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </body>
 
+    <style>
 
-    <div class="bottomnav">
-        <nav class="navbar">
-            <ul>
-                <li><a href="projects.html">game 1</a><li>
-                <li><a href="">game 2</a><li>
-            </ul>
-        </nav>
-    </div>
-   
-</body>
+        * {
+            box-sizing: border-box;
+        }
 
+        p {
+            font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2 {
+            font-family: 'Open Sans', 'Arial Narrow Bold', sans-serif;
+        }
+        li {
+            font-family: 'Open Sans';
+        }
+        ul {
+            margin: 0;
+        }
+        a {
+            font-family: 'Open Sans';
+            text-decoration: none;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            text-decoration: underline; 
+        }
+        a:active {
+            color: red;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            padding-top: 100px;
+        }
+
+        .column1 {
+            display: flex;
+            flex-direction: column;
+            width: 62%;
+            padding: 0 10px;
+            align-items: center;
+        }
+
+        .column2 {
+            display: flex;
+            flex-direction: column;
+            width: 38%;
+            padding: 0 5px;
+            align-items: start;
+        }
+
+        video {
+            width: 100%;
+        }
+       
+        .wrapper {
+            margin: 0 auto;
+            max-width: 1500px;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        @media only screen and (max-width: 750px) {
+            .row {
+                flex-wrap: wrap;
+            }
+
+            .column1 {
+            width: 100%;
+            }
+
+            .column2 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 750px) {
+            .row {
+                flex-wrap: nowrap;
+            }
+
+            .column1 {
+            width: 62%;
+            }
+
+            .column2 {
+                width: 38%;
+            }
+        }
+    </style>
 </html>

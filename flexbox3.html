@@ -1,0 +1,80 @@
+<html lang="en">
+    <head>
+
+    </head>
+    
+    <body>
+
+        <div class="group-row">
+                
+            <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+
+            <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+    
+            <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+        
+            <div class="group-column">
+                <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+
+            </div>
+
+            <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+    
+            <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+
+            <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+        </div>  
+
+        <div class="group-row2">
+            
+            <video loop="true" autoplay="autoplay" controles muted>
+                <source src ="Testvid.mkv">
+            </video>
+
+            <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+        </div>
+    </body>
+
+    <style>
+       
+       * {
+            margin: 0;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: lightpink;
+            border-radius: 10px;
+        }
+        
+        .group-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .group-row2 {
+            display: flex;
+            flex-direction: row;
+            max-widthh: 1000px;
+            height: 800px;
+            align-items: start;
+        }
+
+        video {
+            max-widthh: 1000px;
+            overflow-x: auto;
+            width: 100%;
+            
+        }
+
+        .group-column {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</html>
