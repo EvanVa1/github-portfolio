@@ -3,6 +3,7 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
 
@@ -14,7 +15,7 @@
                 <div class="column1">
 
                     <video loop="true" autoplay="autoplay" controles muted>
-                        <source src ="Testvid.mkv">
+                        <source src ="BD.mp4">
                     </video>
 
                     <p>Store page: <a href="https://play.google.com/store/apps/details?id=com.BDriftGames.BalloonDrifter">Google Play</a></p>
@@ -22,15 +23,17 @@
                 </div>
 
                 <div class="column2">
-                    <h2>Balloon Drifter</h2>
+                    <h2>BALLOON DRIFTER</h2>
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio minus voluptate quam tenetur dolore debitis cum mollitia nesciunt vel aspernatur corporis quibusdam repudiandae laboriosam, consectetur rem asperiores fugiat. Possimus, incidunt!</p>
-                    <p>key achievments</p>
-
+                    <p>First solo game project I've worked on. It served as a great starting point for learning the many skills that go into developing a video game and how they come together.<span class="p-hush"> It's also the only game under my belt at the moment.</span></p>
+                    
+                    <p class="p-ach">Achievments</p>
                     <ul>
-                        <li> laksdjfl </li>
-                        <li> laksdjfl </li>
-                        <li> laksdjfl </li>
+                        <li> Programed a diverse range of mechanics </li>
+                        <li> Modeled, textured, and animated player character and assets </li>
+                        <li> Created a procedural level system </li>
+                        <li> Created a cloud save system using unity gaming services </li>
+                        <li> Published game on Google play </li>
                     </ul> 
                 </div>
             </div>
@@ -45,20 +48,31 @@
 
         p {
             font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            background-color: white;
             margin-top: 0;
         }
+        .p-ach {
+            font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 5px;
+        }
+        .p-hush {
+            font-size: 13px;
+            margin: 0;
+            padding: 0;
+            color: rgba(0, 0, 0, 0.637);
+            font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
         h2 {
-            font-family: 'Open Sans', 'Arial Narrow Bold', sans-serif;
+            font-family: 'Pathway Gothic One', sans-serif;
         }
         li {
-            font-family: 'Open Sans';
+            font-family: 'Open Sans', sans-serif;
         }
         ul {
             margin: 0;
         }
         a {
-            font-family: 'Open Sans';
+            font-family: 'Open Sans', sans-serif;
             text-decoration: none;
         }
         a:visited {
@@ -74,13 +88,14 @@
         body {
             height: 100vh;
             margin: 0;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(230, 230, 230);
         }
 
         .row {
             display: flex;
             flex-direction: row;
             padding-top: 100px;
+            padding-bottom: 15px;
         }
 
         .column1 {
@@ -101,13 +116,14 @@
 
         video {
             width: 100%;
+            border-radius: 10px;
         }
        
         .wrapper {
             margin: 0 auto;
             max-width: 1500px;
             height: 100%;
-            background-color: rgb(255, 255, 255);
+            background-colorr: rgb(255, 255, 255);
         }
 
         @media (max-width: 750px) {
@@ -118,6 +134,11 @@
             .column1 {
                 width: 100%;
                 padding: 0;
+            }
+
+            video {
+                width: 100%;
+                border-radius: 0px;
             }
 
             .column2 {
