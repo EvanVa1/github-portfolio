@@ -3,7 +3,7 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
 
     <body>
@@ -45,6 +45,7 @@
 
         p {
             font-family: 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: white;
         }
         h2 {
             font-family: 'Open Sans', 'Arial Narrow Bold', sans-serif;
@@ -108,7 +109,7 @@
             background-color: rgb(255, 255, 255);
         }
 
-        @media only screen and (max-width: 750px) {
+        @media (max-width: 750px) {
             .row {
                 flex-wrap: wrap;
             }
@@ -122,18 +123,6 @@
             }
         }
 
-        @media only screen and (min-width: 750px) {
-            .row {
-                flex-wrap: nowrap;
-            }
-
-            .column1 {
-            width: 62%;
-            }
-
-            .column2 {
-                width: 38%;
-            }
-        }
+        
     </style>
 </html>
